@@ -50,7 +50,6 @@ Steps to deploy cf-lite with bbl:
     export SYSTEM_DOMAIN="<your system domain>"
     bosh -n -d cf-lite deploy ${CD}/cf-lite-deployment.yml \
     --vars-store=./vars/cf-lite-deployment-vars.yml \
-    -o ${CD}/operations/use-external-blobstore.yml \
     -o ${CD}/operations/use-azure-storage-blobstore.yml \
     -o ${CD}/operations/azure.yml \
     -o ./ops/use-cf-resource-group.yml \
